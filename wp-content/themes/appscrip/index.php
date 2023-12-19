@@ -20,8 +20,8 @@ get_header();
     <!-- Hero Section -->
     <section class="hero-box">
         <div class="container">
-            <div class="row align-items-md-center justify-content-md-between">
-                <div class="col-md-7">
+            <div class="row align-items-md-end">
+                <div class="col-md-6">
                     <div class="hero-text">
 						<h1>Buy our pre-built tinder clone</h1>
 						<p>Customize our tinder clone to build your own custom dating app in 45 days. ios, android & web app built on flutter - 1 code base to maintain your entire front end.</p>
@@ -30,21 +30,18 @@ get_header();
 							<li><i class="fa-solid fa-check"></i> Scalable</li>
 							<li><i class="fa-solid fa-check"></i> 100% Source Code Ownership</li>
 						</ul>
-						<div class="d-flex justify-content-md-between">
-						<div>
+						<div class="two-btns">
 							<a href="http://" class="request-btn pro-blue"><i class="fa-solid fa-circle-play"></i> Product demo</a>
-							<a href="http://" class="request-btn">Request pricing</a>
-						</div>
+							<a href="http://" class="request-btn black-btn">Request pricing</a>
 					</div>
 					</div>
                 </div>
-                <div class="col-md-5">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52307.png" class="hero-img" alt="" srcset="">
-					<div class="blue-bg"></div>
+                <div class="col-md-6">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52400.png" class="" alt="" srcset="">
 					<div class="three-imgs">
-						<a href="http://" class="request-btn">App Store</a>
-						<a href="http://" class="request-btn">Google Play</a>
-						<a href="http://" class="request-btn">Website</a>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52351.svg" class="" alt="" srcset="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52377.svg" class="" alt="" srcset="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52372.svg" class="" alt="" srcset="">
 					</div>
 				</div>
             </div>
@@ -56,34 +53,39 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-					<div class="table-content">
-						<p class="head">TABLE OF CONTENTS</p>
-						<ul>
-							<li>Features of tinder clone</li>
-							<li>Cost of tinder clone</li>
-							<li>How to monetize tinder clone</li>
-							<li>Why choose appscrip’s tinder clone</li>
-							<li>How does appscrip build your dating app faster than others?</li>
-							<li>Technologies used to build tinder clone</li>
-							<li>Tinder like apps built by appscrip</li>
-							<li>FAQs</li>
-						</ul>
-					</div>
-					<div>
-						<div class="blue-txt">
-							Discuss your idea with certified professionals.
+					<div class="sticky-sidebar">
+						<div class="table-content">
+							<p class="head">TABLE OF CONTENTS</p>
+							<ul>
+							<li><a href="#features" onclick="scrollToSection('features')">Features of tinder clone</a></li>
+							<li><a href="#costarea" onclick="scrollToSection('costarea')">Cost of tinder clone</a></li>
+							<li><a href="#monetize" onclick="scrollToSection('monetize')">How to monetize tinder clone</a></li>
+							<li><a href="#choose" onclick="scrollToSection('choose')">Why choose appscrip's tinder clone</a></li>
+							<li><a href="#build" onclick="scrollToSection('build')">How does appscrip build your dating app faster than others?</a></li>
+							<li><a href="#technologies" onclick="scrollToSection('technologies')">Technologies used to build tinder clone</a></li>
+							<li><a href="#apps" onclick="scrollToSection('apps')">Tinder like apps built by appscrip</a></li>
+							<li><a href="#faqs" onclick="scrollToSection('faqs')">FAQs</a></li>
+							</ul>
 						</div>
-						<div class="green-txt">
-							Setup 100% free product consultation
+						<div>
+							<div class="blue-txt">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/4df797a2c103bf2afb416050eb86e6b7.png" class="" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/9e8542ce8ad5a4d58e3f6a2819023c4c1.png" class="m1" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/9e8542ce8ad5a4d58e3f6a2819023c4c.png" class="m2" alt="" srcset="">
+								Discuss your idea with certified professionals.
+							</div>
+							<div class="green-txt">
+								Setup 100% free product consultation
+							</div>
 						</div>
 					</div>
 				</div>
                 <div class="col-md-9">
                     <div class="content-area">
-						<div class="features-area">
-							<h3 class="head-title">Features of tinder clone</h3>
+						<div class="features-area cost" id="features">
+							<h3 class="head-title" >Features of tinder clone</h3>
 							<p class="sub-title">Our tinder clone app boasts all the essential features essential for a successful launch in your dating app business</p>
-							<div class="d-flex features">
+							<div class="d-flex features left-side">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52307.png" alt="" srcset="">
 								<div>
 									<h4>Match feed</h4>
@@ -97,7 +99,7 @@ get_header();
 									<p>In our tinder clone, users can send gifts & coins to matches and prospects with personalised notes</p>
 								</div>
 							</div>
-							<div class="d-flex features">
+							<div class="d-flex features left-side">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52331.png" alt="" srcset="">
 								<div>
 									<h4>Paid chat</h4>
@@ -111,7 +113,7 @@ get_header();
 									<p>With profile boosting, users in our tinder clone can increase visibility and attract more engaged audience to their profiles.</p>
 								</div>
 							</div>
-							<div class="d-flex features">
+							<div class="d-flex features left-side">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52329.png" alt="" srcset="">
 								<div>
 									<h4>Face verification</h4>
@@ -125,9 +127,53 @@ get_header();
 									<p>In our tinder clone app, users can subscribe for paid plans for more features and advanced filters</p>
 								</div>
 							</div>
-							<div class="view-btn text-center"><a href="http://">View all features</a></div>
+							<div class="moretext">
+								<div class="d-flex features left-side">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52314.png" alt="" srcset="">
+									<div>
+										<h4>Like profile</h4>
+										<p>Users can like and super like other profiles in our tinder clone app</p>
+									</div>
+								</div>
+								<div class="d-flex flex-md-row-reverse features right-side">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52315.png" alt="" srcset="">
+									<div>
+										<h4>Audio/video call</h4>
+										<p>In our tinder clone, users can engage in audio/video calls with matches and extend the duration by using coins.</p>
+									</div>
+								</div>
+								<div class="d-flex features left-side">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52316.png" alt="" srcset="">
+									<div>
+										<h4>Video profile</h4>
+										<p>Encourage trust and authenticity by allowing users to share personal videos on their profiles, nurturing stronger connections within our tinder clone.</p>
+									</div>
+								</div>
+								<div class="d-flex flex-md-row-reverse features right-side">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52317.png" alt="" srcset="">
+									<div>
+										<h4>Video date</h4>
+										<p>Within our tinder clone, users can schedule dates with their matches, offering options for in-person, audio call, or video call.</p>
+									</div>
+								</div>
+								<div class="d-flex features left-side">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52318.png" alt="" srcset="">
+									<div>
+										<h4>Random calling</h4>
+										<p>In our tinder clone, users have the option to connect with random online users via live video or audio calls</p>
+									</div>
+								</div>
+								<div class="d-flex flex-md-row-reverse features right-side">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52319.png" alt="" srcset="">
+									<div>
+										<h4>Speed dating</h4>
+										<p>In our tinder clone, users can engage in hour-long speed-dating events, connecting with several potential matches through 5-minute calls.</p>
+									</div>
+								</div>
+							</div>
+							<div class="view-btn text-center"><a href="#" class="moreless-button">View more features</a></div>
 						</div>
-						<div class="cost-area">
+						<div class="cost-area cost" id="costarea">
 							<h3 class="head-title">Cost of tinder clone</h3>
 							<p class="sub-title">Our tinder clone app comes equipped with features that allow you to generate revenue</p>
 							<div class="row">
@@ -165,38 +211,38 @@ get_header();
 							</div>
 							<a href="http://" class="blue-btn mob-contact">Contact Us</a>
 						</div>
-						<div class="cost">
+						<div class="cost" id="monetize">
 							<h3 class="head-title">How to monetize tinder clone</h3>
 							<p class="sub-title">Our tinder clone app comes equipped with features that allow you to generate revenue</p>
 							<div class="monetize">
 								<div>
-									<i class="fa-solid fa-money-bills"></i>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/vuesax-bold-moneys.svg" alt="" srcset="">
 									<p><strong>Earn money via virtual coins</strong>
 									Users can exchange virtual gifts using coins in our tinder clone, with the dating app earning a commission per gift sent.</p>
 								</div>
 								<div>
-									<i class="fa-solid fa-comments"></i>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/vuesax-bold-messages.svg" alt="" srcset="">
 									<p><strong>Chat commissions</strong>
 									Users can message potential matches before matching by spending coins. the dating app earns a commission from these interactions.</p>
 								</div>
 								<div>
-									<i class="fa-solid fa-microphone-lines"></i>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/vuesax-bold-microphone-2.svg" alt="" srcset="">
 									<p><strong>In-app advertisements</strong>
 									Your dating app earns commission through in-app advertisements by third-party vendors. The commission can be set on the number of clicks or products purchased via referrals.</p>
 								</div>
 								<div>
-									<i class="fa-solid fa-crown"></i>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/vuesax-bold-crown.svg" alt="" srcset="">
 									<p><strong>Subscription/paid plan</strong>
 									Users can subscribe to paid plans and enjoy more features in our tinder clone dating app like advanced filters, 100 matches a day, video profile, paid posts and more.</p>
 								</div>
 								<div>
-									<i class="fa-solid fa-calendar-days"></i>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/vuesax-bold-calendar-2.svg" alt="" srcset="">
 									<p><strong>Setup paid speed dating events</strong>
 									Host hour-long speed dating events where users spend coins to participate. the app earns through these interactions, facilitating connections and matches.</p>
 								</div>
 							</div>
 						</div>
-						<div class="cost">
+						<div class="cost" id="choose">
 							<h3 class="head-title">Why choose appscrip's tinder clone</h3>
 							<p class="sub-title">Our tinder clone dating app comes fully equipped with the latest features, providing you complete control to tailor the app according to your business model.</p>
 							<ul class="choose">
@@ -215,7 +261,7 @@ get_header();
 							</ul>
 							<a href="http://" class="blue-btn">Contact Us</a>
 						</div>
-						<div class="cost">
+						<div class="cost" id="build">
 							<h3 class="head-title">How does appscrip build your dating app faster than others?</h3>
 							<p class="sub-title">7-Step methodology the appscrip way</p>
 							<div class="build">
@@ -249,34 +295,34 @@ get_header();
 								</div>
 							</div>
 						</div>
-						<div class="cost">
+						<div class="cost" id="technologies">
 							<h3 class="head-title">Technologies used to build tinder clone</h3>
 							<p class="sub-title">Cutting-edge technologies shaping our tinder clone app</p>
 							<div class="technologies">
 								<div class="box">
 									<div class="text">Android, iOS & Website</div>
 									<div class="imgs">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Google-flutter-logo.png" alt="" srcset="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/flutterio-ar21.svg" alt="" srcset="">
 									</div>
 								</div>
 								<div class="box">
 									<div class="text">Back-End</div>
 									<div class="imgs">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Google-flutter-logo.png" alt="" srcset="">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Google-flutter-logo.png" alt="" srcset="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/nodejs-horizontal.svg" alt="" srcset="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/python-horizontal.svg" alt="" srcset="">
 									</div>
 								</div>
 								<div class="box">
 									<div class="text">WebRTC</div>
 									<div class="imgs">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Google-flutter-logo.png" alt="" srcset="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 18.svg" alt="" srcset="">
 									</div>
 								</div>
 								<div class="box">
 									<div class="text">Database</div>
 									<div class="imgs">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Google-flutter-logo.png" alt="" srcset="">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Google-flutter-logo.png" alt="" srcset="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/redis-ar21.svg" alt="" srcset="">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mongodb-ar21.svg" alt="" srcset="">
 									</div>
 								</div>
 							</div>
@@ -367,15 +413,15 @@ get_header();
 								</table>
 							</div>
 						</div>
-						<div class="cost">
+						<div class="cost" id="apps">
 							<h3 class="head-title">Tinder like apps built by appscrip</h3>
 							<div class="apps">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Find Me a Freak.svg" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HookUP.com.svg" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Koottu.svg" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/GoGetter.svg" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Matzoball- JEWZZ.svg" alt="" srcset="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group 52272.svg" alt="" srcset="">
 							</div>
 						</div>
 						<div class="cost">
@@ -434,7 +480,7 @@ get_header();
 								</div>
 							</div>
 						</div>
-						<div class="cost">
+						<div class="cost" id="faqs">
 							<h3 class="head-title">FAQs</h3>
 							<div class="accordion" id="accordionExample">
 								<div class="accordion-item">
@@ -538,7 +584,7 @@ get_header();
 		<div class="click-hand">
 			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-			<dotlottie-player src="https://lottie.host/df763986-95ec-45d1-92fc-adfa325a458f/HBKl4evycZ.json" background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+			<dotlottie-player src="https://lottie.host/df763986-95ec-45d1-92fc-adfa325a458f/HBKl4evycZ.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></dotlottie-player>
 		</div>
 		<div class="mob-bottom">
 			<div class="blue-strip">

@@ -21,6 +21,17 @@
 
 <?php wp_footer(); ?>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      window.scrollTo({
+        behavior: 'smooth',
+        top: section.offsetTop - 60
+      });
+    }
+  </script>
+
 <script>
 jQuery(document).ready(function(){
 	if (window.matchMedia('(max-width: 480px)').matches)
@@ -33,6 +44,18 @@ jQuery(document).ready(function(){
     }
 	
 });
+</script>
+<script>
+	jQuery('.moreless-button').click(function(e) {
+		jQuery('.moretext').slideToggle();
+		if (jQuery('.moreless-button').text() == "View more features") {
+			jQuery(this).text("View less features")
+		} else {
+			jQuery(this).text("View more features")
+		}
+		// Cancel the default action
+		e.preventDefault();
+	});
 </script>
 <!-- JS script -->
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

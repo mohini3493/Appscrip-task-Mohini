@@ -68,7 +68,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  */
 html {
 	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 0%;
+	scroll-behavior: smooth;
 }
 
 /* Sections
@@ -877,6 +878,9 @@ textarea {
 	margin-bottom: 1.5em;
 }
 /* Task CSS */
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px;
+}
 @font-face {
 	font-family: 'OpenSauceOne-Light';
 	src: url('./assets/Fonts/OpenSauceOne-Light.ttf') format('truetype');
@@ -908,9 +912,10 @@ textarea {
 
 .navbar{
     border-bottom: 1px solid #eee;
+	background: #fff;
 }
 .navbar-brand img{
-    width: 197px;
+    width: 140px;
 }
 nav a{
     font-family: 'OpenSauceSans-Medium';
@@ -919,58 +924,62 @@ nav a{
 .blue-tel{
     background: #2347BD 0% 0% no-repeat padding-box;
     border-radius: 31px;
-    width: 58px;
-    height: 58px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    margin-right: 30px;
-    margin-left: 50px;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 .blue-tel i{
     color: #fff;
-    font-size: 28px;
-    line-height: 58px;
+    font-size: 20px;
+    line-height: 40px;
 }
 .contact-btn{
-    padding: 18px 25px !important;
+	padding: 12px 24px !important;
     background-color: #2B9F30;
     border-radius: 31px;
     font-family: 'Product Sans Bold';
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 18px;
     color: #FFFFFF !important;
+}
+.navbar-nav {
+    align-items: center;
 }
 
 /* Hero CSS */
 .hero-box{
-	padding-bottom: 195px;
+	padding-top: 99px;
+	padding-bottom: 95px;
 }
 .hero-text h1{
 	font-family: 'OpenSauceOne-ExtraBold';
 	letter-spacing: -1.35px;
 	color: #242424;
-	font-size: 90px;
-	line-height: 111px;
+	font-size: 70px;
+    line-height: 85px;
 	margin-bottom: 32px;
 }
 .hero-text p{
-	font-size: 23px;
-	line-height: 38px;
-	letter-spacing: -0.34px;
-	margin-bottom: 60px;
+	font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.34px;
+    margin-bottom: 25px;
 }
 .hero-text ul{
 	padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-	margin-bottom: 70px;
+	margin-bottom: 35px;
 }
 .hero-text li{
 	color: #242424;
 	font-family: 'OpenSauceOne-SemiBold';
 	border-right: 1px solid #C9C2E2;
-	padding-right: 28px;
-	margin-right: 30px;
+	padding-right: 8px;
+    margin-right: 10px;
 }
 .hero-text li:last-child{
 	border: 0;
@@ -984,25 +993,11 @@ nav a{
 	text-align: center;
     line-height: 25px;
 }
-.hero-img{
-	float: right;
-}
-.blue-bg{
-	width: 356px;
-    height: 356px;
-    background: transparent linear-gradient(155deg, #E2ECFF 0%, #E2ECFF03 100%) 0% 0% no-repeat padding-box;
-    border-radius: 303px;
-    position: absolute;
-    top: 27%;
-    z-index: -1;
-    right: 10%;
-}
 .request-btn{
 	font-family: 'OpenSauceSans-Bold';
 	text-transform: capitalize;
-	font-size: 25px;
-	line-height: 30px;
-	padding: 24px 34px;
+	font-size: 18px;
+    line-height: 20px;
 	border: 2px solid #242424;
 	border-radius: 40px;
 	display: inline-block;
@@ -1013,7 +1008,19 @@ nav a{
 	background: #2347BD;
 	border-color: #2347BD;
 	color: #fff;
-	margin-right: 30px;
+	margin-right: 20px;
+	padding: 5px;
+	display: inline-flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.pro-blue i{
+	font-size: 45px;
+	margin-right: 5px;
+}
+.black-btn{
+    padding: 12px 24px;
+	line-height: 30px;
 }
 
 /* Features CSS */
@@ -1027,28 +1034,35 @@ nav a{
 }
 .features{
 	margin-bottom: 30px;
+	align-items: center;
 }
 .features img{
-	width: 388px;
-	padding-right: 60px;
+	width: 58%;
 }
 .features h4{
 	text-transform: capitalize;
 	font-family: 'OpenSauceSans-Bold';
-	font-size: 38px;
-	line-height: 98px;
+	font-size: 24px;
+    line-height: 40px;
 }
 .features p{
-	font: normal normal normal 21px/26px 'OpenSauceSans-Regular';
+	font: normal normal normal 15px/22px 'OpenSauceSans-Regular';
 	letter-spacing: -0.32px;
 	color: #626262;
 }
 .right-side h4, .right-side p{
 	text-align: right;
 }
-.right-side img{
-	padding-left: 60px;
-	padding-right: 0px;
+.right-side div{
+	padding-right: 30px;
+}
+.left-side div{
+	padding-left: 30px;
+}
+.sticky-sidebar{
+	position: -webkit-sticky;
+    position: sticky;
+    top: 68px;
 }
 .table-content p.head{
 	text-align: left;
@@ -1062,48 +1076,60 @@ nav a{
 	list-style: none;
 }
 .table-content li{
+	margin-bottom: 18px;
+}
+.table-content li a{
 	text-align: left;
-	font: normal normal bold 21px/38px 'OpenSauceSans-Bold';
+	font: normal normal bold 15px/23px 'OpenSauceSans-Bold';
 	letter-spacing: -0.32px;
 	color: #242424;
-	margin-bottom: 32px;
 }
 .table-content ul::before, .table-content ul::after{
 	content: '';
 	width: 8px;
 	display: inline-block;
     position: absolute;
-	left: 7.5%;
+	left: 1%;
 	border-radius: 30px;
 }
 .table-content ul::after {
-	height: 760px;
+	height: 385px;
 	background: #EBE9F5 0% 0% no-repeat padding-box;
-	top: 147%;
+	top: 8%;
 	
 }
 .table-content ul::before{
-	height: 56px;
-	background: #2347BD 0% 0% no-repeat padding-box;
-	z-index: 1;
+	height: 43px;
+    background: #2347BD 0% 0% no-repeat padding-box;
+    z-index: 1;
+    top: 8%;
 }
 .blue-txt{
 	background-color: #2347BD;
 	padding: 20px 56px 20px 20px;
-	font: normal normal 800 29px/31px 'OpenSauceOne-ExtraBold';
+	font: normal normal 800 20px/24px 'OpenSauceOne-ExtraBold';
 	letter-spacing: -0.43px;
 	color: #FFFFFF;
+}
+.blue-txt img.m1{
+	transform: translateX(-20px);
+}
+.blue-txt img.m2{
+	transform: translateX(-40px);
 }
 .green-txt{
 	padding: 20px 60px 20px 30px;
 	text-align: left;
-	font: normal normal bold 24px/30px 'OpenSauceSans-Bold';
+	font: normal normal bold 16px/22px 'OpenSauceSans-Bold';
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	background-color: #2B9F30;
 }
+.two-btns{
+	display: flex;
+}
 .view-btn a{
-	font: normal normal bold 25px/31px 'OpenSauceSans-Bold';
+	font: normal normal bold 20px/30px 'OpenSauceSans-Bold';
 	padding: 10px 13px;
 	border-bottom: 3px solid #2347BD;
 	color: #242424;
@@ -1116,11 +1142,16 @@ nav a{
 	margin-top: 43px;
 }
 .content-area{
-	padding: 0 100px 0 106px;
+	padding: 0 80px;
 }
 .features-area{
 	padding-bottom: 100px;
+	margin-top: 60px; /* Adjust according to your header height */
+	padding-top: 80px; /* Add padding to account for the fixed header */
 }
+.moretext {
+	display: none;
+  }
 /* Cost CSS */
 .cost-area th{
 	font: normal normal medium 20px/26px 'OpenSauceSans-Medium';
@@ -1131,14 +1162,14 @@ nav a{
     flex-wrap: wrap;
 }
 .monetize div{
-	width: 48%;
+	width: 46%;
 	border: 1px solid #EBE9F5;
 	padding: 0 0 15px 15px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 }
 .monetize strong{
-	font: normal normal bold 22px/38px 'OpenSauceSans-Bold';
+	font: normal normal bold 18px/30px 'OpenSauceSans-Bold';
 	letter-spacing: -0.33px;
 	color: #242424;
 	margin-bottom: 15px;
@@ -1148,22 +1179,23 @@ nav a{
 .monetize p{
 	margin: 0;
 }
-.monetize i{
+.monetize img{
 	color: #242424;
-	font-size: 40px;
-	padding: 20px;
+	width: 46px;
+	padding: 10px;
 	background: #EBE9F5;
 	border: 1px solid #EBE9F5;
 	float: right;
 }
 .cost{
-	padding-bottom: 60px;
+	padding-bottom: 80px;
+	padding-top: 80px;
 }
 .choose{
 	list-style: square;
 	margin: 0;
 	color: #242424;
-	font-size: 22px;
+	font-size: 18px;
 	position: relative;
 }
 .choose li::marker{
@@ -1180,20 +1212,20 @@ nav a{
 	content: '';
 	background: #242424;
 	width: 3px;
-	height: 451px;
+	height: 392px;
     position: absolute;
     top: 6%;
     left: 6px;
 }
 .blue-btn{
-	font: normal normal bold 25px/31px 'OpenSauceSans-Bold';
-	letter-spacing: 0px;
-	color: #FFFFFF;
-	text-transform: capitalize;
-	padding: 24px 60px;
-	background: #2347BD;
-	border-radius: 40px;
-	margin-top: 30px;
+	font: normal normal bold 20px/30px 'OpenSauceSans-Bold';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    padding: 15px 45px;
+    background: #2347BD;
+    border-radius: 40px;
+    margin-top: 15px;
     display: inline-block;
 }
 .apps{
@@ -1216,7 +1248,7 @@ nav a{
 	width: 33.33%;
 	padding: 20px;
 	background: #2347BD;
-	margin-right: 30px;
+	margin-right: 20px;
 }
 .count span{
 	font: normal normal 800 50px 'OpenSauceOne-ExtraBold';
@@ -1226,7 +1258,7 @@ nav a{
 }
 .count p{
 	margin: 0;
-	font: normal normal 600 19px 'OpenSauceOne-SemiBold';
+	font: normal normal 600 16px 'OpenSauceOne-SemiBold';
 	letter-spacing: -0.39px;
 	color: #FFFFFF;
 	text-transform: capitalize;
@@ -1239,12 +1271,12 @@ nav a{
 .build div{
 	border: 1px solid #EBE9F5;
 	width: 23%;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-right: 12px;
+	margin-bottom: 12px;
 	position: relative;
 }
 .build span{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 800;
 	letter-spacing: -0.75px;
 	color: #FFFFFF;
@@ -1254,18 +1286,18 @@ nav a{
 	position: absolute;
 }
 .build strong{
-	font: normal normal bold 18px/28px 'OpenSauceSans-Bold';
+	font: normal normal bold 16px/22px 'OpenSauceSans-Bold';
 	letter-spacing: -0.33px;
 	color: #242424;
-	margin: 90px 0 15px;
-	padding: 0 20px;
+	margin: 65px 0 10px;
+	padding: 0 10px;
 	display: block;
 }
 .build p{
-	font: normal normal normal 15px/22px 'OpenSauceSans-Regular';
+	font: normal normal normal 14px/22px 'OpenSauceSans-Regular';
 	letter-spacing: -0.3px;
 	color: #626262;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 .technologies{
 	display: flex;
@@ -1277,8 +1309,8 @@ nav a{
 	width: 48%;
 	height: 116px;
 	border: 1px solid #EBE9F5;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-right: 12px;
+	margin-bottom: 12px;
 
 }
 .technologies .text{
@@ -1302,12 +1334,12 @@ nav a{
 	width: 100px;
 }
 .accordion-header button{
-	font: normal normal bold 28px/48px 'OpenSauceSans-Bold';
+	font: normal normal bold 22px/32px 'OpenSauceSans-Bold';
 	letter-spacing: -0.42px;
 	color: #242424;
 }
 .accordion-body{
-	font: normal normal normal 20px/26px 'OpenSauceSans-Regular';
+	font: normal normal normal 17px/20px 'OpenSauceSans-Regular';
 	letter-spacing: -0.3px;
 	color: #626262;
 	padding: 1rem 0;
@@ -1348,18 +1380,19 @@ nav a{
     align-items: center;
 }
 .blue-tick i{
-	width: 116px;
-	height: 98px;
-	background: #2347BD;
-	color: #fff;
-	font-size: 48px;
-	margin-right: 20px;
-	line-height: 98px;
+	width: 70px;
+    height: 70px;
+    background: #2347BD;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 20px;
+    line-height: 68px;
     text-align: center;
 }
 .blue-tick p{
+	width: 100%;
 	margin: 0;
-	width: 760px;
+	font-size: 18px;
 }
 .feedback-pro{
 	display: flex;
@@ -1369,8 +1402,8 @@ nav a{
 .feedback{
 	border: 1px solid #EBE9F5;
 	padding: 20px;
-	margin-bottom: 40px;
-	margin-right: 22px;
+	margin-bottom: 30px;
+	margin-right: 18px;
     width: 47%;
 }
 .feedback i{
@@ -1519,11 +1552,11 @@ nav a{
 .cost-area a{
 	background: #2347BD;
 	border-radius: 40px;
-	padding: 24px 60px;
-	font: normal normal bold 20px/28px 'OpenSauceSans-Bold';
-	color: #FFFFFF;
-	display: inline-block;	
-	margin-bottom: 25px;
+	padding: 12px 45px;
+    font: normal normal bold 18px/28px 'OpenSauceSans-Bold';
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 18px;
 }
 .content-area .sub-title{
 	margin-bottom: 40px;
@@ -1538,24 +1571,24 @@ nav a{
 	background: #E5017C;
 	border: 3px solid #242424;
 	border-radius: 61px;
-	padding: 20px 45px;
+	padding: 10px 0;
 	text-align: center;
-	font: normal normal bold 33px/41px 'OpenSauceSans-Bold';
+	font: normal normal bold 22px/26px 'OpenSauceSans-Bold';
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	text-transform: capitalize;
-	margin-right: 8px;
-    margin-bottom: 5px;
-	width: 317px;
+	margin-right: 4px;
+    margin-bottom: 1px;
+	width: 212px;
 }
 .click-hand{
 	position: absolute;
-	bottom: -82px;
-    right: -72px;
+	bottom: -35px;
+    right: -29px;
 }
 .fixed-btn{
 	position: fixed;
-	bottom: 38px;
+	bottom: 15px;
     right: 20px;
 }
 
@@ -1564,14 +1597,14 @@ nav a{
 	padding: 90px 0;
 }
 .story-section h3{
-	font: normal normal 800 50px/111px 'OpenSauceOne-ExtraBold';
+	font: normal normal 800 40px/60px 'OpenSauceOne-ExtraBold';
 	letter-spacing: -0.75px;
 	color: #242424;
 	margin-bottom: 18px;
 	text-align: center;
 }
 .story-section p{
-	font: normal normal normal 20px/26px 'OpenSauceSans-Regular';
+	font: normal normal normal 17px/0 'OpenSauceSans-Regular';
 	letter-spacing: -0.3px;
 	margin-bottom: 40px;
 	text-align: center;
@@ -1580,24 +1613,27 @@ nav a{
 	border: 1px solid #EBE9F5;
 }
 .story-post .story-bg{
-	height: 296px;
+	height: 180px;
 	background: #F7F7FA 0% 0% no-repeat padding-box;
 }
 .story-post .story-txt{
-	padding: 30px 30px 40px;
+	padding: 20px 20px 30px;
 }
 .story-post .story-txt h4{
-	font: normal normal bold 28px/36px 'OpenSauceSans-Bold';
+	font: normal normal bold 20px/24px 'OpenSauceSans-Bold';
 	letter-spacing: -0.42px;
 }
 .story-post .story-txt p{
-	font: normal normal normal 21px/26px 'OpenSauceSans-Regular';
+	font: normal normal normal 15px/20px 'OpenSauceSans-Regular';
 	letter-spacing: -0.32px;
 	text-align: left;
 }
 .three-imgs{
-	position: absolute;
-    bottom: -62px;
+	text-align: right;
+}
+.three-imgs img{
+	width: 145px;
+    margin-left: 20px;
 }
 .three-imgs a{
 	margin-right: 10px;
@@ -1605,7 +1641,6 @@ nav a{
 .mob-contact, .mob-bottom{
 	display: none !important;
 }
-
 
 /* Media query CSS */
 @media only screen and (max-width: 480px) {
@@ -1636,6 +1671,7 @@ nav a{
     .menu-box{
         position: absolute;
         top: 55px;
+		background-color: #F1F0FD;
     }
     .navbar-toggler, .navbar-toggler:focus {
         box-shadow: none;
@@ -1699,22 +1735,34 @@ nav a{
 	.click-hand {
 		display: none;
 	}
-	.blue-bg {
-		width: 280px;
-		height: 280px;
-		top: 100%;
-		right: 5%;
-	}
-	.three-imgs {
-		position: inherit;
-		margin-top: 24px;
-		display: inline-block;
+	.three-imgs img {
+		width: 93px;
+		margin-left: 0px;
 	}
 	.hero-box {
 		padding-bottom: 40px;
+		padding-top: 45px;
+	}
+	.table-content{
+		background-color: #F1F0FD;
 	}
 	.table-content ul::after {
-		top: 186%;
+		top: 18%;
+		left: 5%;
+		width: 5px;
+		height: 364px;
+	}
+	.left-side div {
+		padding-left: 0px;
+	}
+	.features img {
+		width: 100%;
+	}
+	.table-content ul::before {
+		height: 33px;
+		top: 18%;
+		left: 5%;
+		width: 5px;
 	}
 	.blue-txt , .green-txt{
 		display: none;
@@ -1748,6 +1796,13 @@ nav a{
 	}
 	.features-area, .cost-area, .cost {
 		padding-bottom: 40px;
+		padding-top: 0;
+	}
+	.features-area, .cost-area, .cost {
+		margin-top: 20px;
+	}
+	.table-content ul {
+		padding-bottom: 20px;
 	}
 	.cost-area .blue-line, .cost-area .grey-line{
 		flex: 0 0 auto;
@@ -1832,7 +1887,7 @@ nav a{
 	}
 	.technologies .box {
 		flex-direction: column;
-		width: 43%;
+		width: 47%;
 		height: auto;
 		margin-right: 8px;
 		margin-bottom: 8px;
@@ -1859,11 +1914,14 @@ nav a{
 		width: 138px;
 	}
 	.blue-tick i {
-		width: 110px;
-		height: 35px;
-		font-size: 20px;
+		width: 12%;
+		height: 30px;
+		font-size: 15px;
 		margin-right: 10px;
-		line-height: 35px;
+		line-height: 30px;
+	}
+	.blue-tick p {
+		font-size: 16px;
 	}
 	.blue-tick li {
 		margin-bottom: 20px;
@@ -1962,5 +2020,14 @@ nav a{
 	.table-content p.head {
 		background-color: #F1F0FD;
 		padding: 10px 20px;
+	}
+	.two-btns {
+		flex-direction: column;
+	}
+	.pro-blue {
+		justify-content: center;
+	}
+	.pro-blue i {
+		font-size: 15px;
 	}
 }

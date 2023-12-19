@@ -29,7 +29,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'appscrip' ); ?></a>
 
 	<!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Group-4431-1.svg" alt="" srcset="">
